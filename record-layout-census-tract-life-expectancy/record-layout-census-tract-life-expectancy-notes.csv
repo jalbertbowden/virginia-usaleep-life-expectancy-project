@@ -1,4 +1,4 @@
 Note
 "This workbook contains the Record Layout for File A and File B for the life table functions produced for each jurisdiction that participated in the United States Small-Area Life Expectancy Estimates Project, part of the United States Life Table Program at the National Center for Health Statistics."
-["File A: contains the census tract IDs, life expectancy at birth and standard error of the life expectancy at birth (1 row per census tract)"](https://github.com/jalbertbowden/virginia-usaleep-life-expectancy-project/blob/master/record-layout-census-tract-life-expectancy/record-layout-census-tract-life-expectancy-file-a.csv)
+[File A: contains the census tract IDs, life expectancy at birth and standard error of the life expectancy at birth (1 row per census tract)](https://github.com/jalbertbowden/virginia-usaleep-life-expectancy-project/blob/master/record-layout-census-tract-life-expectancy/record-layout-census-tract-life-expectancy-file-a.csv)
 "File B: contains the census tract IDs, abridged, period life table functions for 11 age groups (11 rows per census tract)"
