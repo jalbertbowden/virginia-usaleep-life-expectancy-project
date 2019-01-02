@@ -1,0 +1,14 @@
+Database Field Name,Type,Description
+TRACT ID,character,"Concatenation of 2-digit state FIPS code, 3-digit county FIPS code, and 6-digit census tract number"
+STATE2KX,character,Census 2010 FIPS State Code (2-digit numeric with leading zeros significant)
+CNTY2KX,character,Census 2010 FIPS County Code (3-digit numeric with leading zeros significant)
+TRACT2KX,character,Census 2010 Tract (contains leading zeros with the decimal point implied)
+AGE GROUP,character,"The age interval between two exact ages, x and x+n"
+nqx,numeric,Probability of dying between ages x and x+n
+lx,numeric,Number surviving to age x
+ndx,numeric,Number dying between ages x and x+n
+nLx,numeric,Person-years lived between agex x and x+n
+Tx,numeric,Total number of person-years lived above age x
+ex,numeric,Expectation of life at age x
+se(nqx),numeric,Standard error of the probability of dying between ages x and x+n
+se(ex),numeric,Standard error of life expectancy at age x

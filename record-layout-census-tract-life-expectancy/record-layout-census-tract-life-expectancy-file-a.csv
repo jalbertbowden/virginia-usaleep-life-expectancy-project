@@ -1,0 +1,8 @@
+Database Field Name,Type,Description,Code
+Tract ID,character,"Concatenation of 2-digit state FIPS code, 3-digit county FIPS code, and 6-digit census tract number",
+STATE2KX,character,Census 2010 FIPS State Code (2-digit numeric with leading zeros significant),
+CNTY2KX,character,Census 2010 FIPS County Code (3-digit numeric with leading zeros significant),
+TRACT2KX,character,Census 2010 Tract (contains leading zeros with the decimal point implied),
+e0,numeric,Life expectancy at birth,
+se(e0),numeric,Standard error of life expectancy at birth,
+Abridged life table flag,numeric,"Flag to indicate the source of the age-specific death rates used to calculate the abridged, period life tables.","1 = Observed age-specific death rates for all age groups, 2 = Predicted age-specific death rates for all age groups, 3 = Combination of observed and predicted age-specific death rates"

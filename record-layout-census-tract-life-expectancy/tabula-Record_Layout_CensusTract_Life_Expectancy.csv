@@ -1,0 +1,44 @@
+This workbook contains the Record Layout for File A and File B for the life table functions produced for each
+"jurisdiction that participated in the United States Small-Area Life Expectancy Estimates Project,"
+part of the United States Life Table Program at the National Center for Health Statistics.
+"File A: contains the census tract IDs, life expectancy at birth and standard error of the life expectancy at"
+birth (1 row per census tract)
+"File B: contains the census tract IDs, abridged, period life table functions for 11 age groups (11 rows per"
+census tract)
+Database Field Name,Type,Description Code
+"",,"Concatenation of 2-digit state FIPS code, 3-"
+"",,"digit county FIPS code, and 6-digit census tract"
+Tract ID,character,number
+"",,Census 2010 FIPS State Code (2-digit numeric
+STATE2KX,character,with leading zeros significant)
+"",,Census 2010 FIPS County Code (3-digit numeric
+CNTY2KX,character,with leading zeros significant)
+"",,Census 2010 Tract (contains leading zeros with
+TRACT2KX,character,the decimal point implied)
+ee0,numeric,Life expectancy at birth
+ssee(ee0),numeric,Standard error of life expectancy at birth
+Abridged life table,numeric,Flag to indicate the source of the age-specific 1 = Observed age-specific death rates
+flag,,"death rates used to calculate the abridged, for all age groups"
+"",,period life tables.  2 = Predicted age-specific death rates
+"",,for all age groups
+"",,3 = Combination of observed and
+"",,predicted age-specific death rates
+Database Field Name,Type,Description
+"",,"Concatenation of 2-digit state FIPS code, 3-digit county FIPS"
+TRACT ID,character,"code, and 6-digit census tract number"
+"",,Census 2010 FIPS State Code (2-digit numeric with leading zeros
+STATE2KX,character,significant)
+"",,Census 2010 FIPS County Code (3-digit numeric with leading
+CNTY2KX,character,zeros significant)
+"",,Census 2010 Tract (contains leading zeros with the decimal
+TRACT2KX,character,point implied)
+AGE GROUP,character,"The age interval between two exact ages, x and x+n"
+nqx,numeric,Probability of dying between ages x and x+n
+lx,numeric,Number surviving to age x
+ndx,numeric,Number dying between ages x and x+n
+nLx,numeric,Person-years lived between agex x and x+n
+Tx,numeric,Total number of person-years lived above age x
+ex,numeric,Expectation of life at age x
+"",,Standard error of the probability of dying between ages x and
+se(nqx),numeric,x+n
+se(ex),numeric,Standard error of life expectancy at age x
